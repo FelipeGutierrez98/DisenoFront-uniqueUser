@@ -1,0 +1,37 @@
+<div class="formulario">
+  <div class="registrar">
+    <h1>Registrar</h1>
+    <form (ngSubmit)="createUser()" #createForm="ngForm">
+      <div class="input">
+        <input
+          type="text"
+          name="username"
+          placeholder="Usuario"
+          [(ngModel)]="username"
+          required
+        />
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          [(ngModel)]="email"
+          required
+        />
+      </div>
+      <div class="input">
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          [(ngModel)]="password"
+          required
+        />
+      </div>
+      <button type="submit" class="boton" [disabled]="!createForm.form.valid">
+        CHECK IN
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+*{
+    border: none;
+   list-style: none;
+   text-decoration: none;
+}
+
+.principal{
+ display: flex;
+ flex-direction: column;
+ width: 30vh;
+ margin: auto;
+ border: 1px solid black;
+ height: 200px;
+ justify-content: center;
+ align-items: center;
+ margin-top: 60px;
+ padding: 10px 20px;
+ border-radius: 50px;
+ box-shadow: 0 0 12px;
+ background-color: #9d9090;
+ border: none;
+ margin-bottom: 20px;
+}
+.principal:hover{
+    transition: 0.2s;
+    scale: 1.1;
+}
+.imagen{
+    width:150px ;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+}

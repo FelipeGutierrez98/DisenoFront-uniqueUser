@@ -1,0 +1,28 @@
+<div class="formulario">
+  <div class="registrar">
+    <h1>Iniciar</h1>
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div class="input">
+        <input
+          type="text"
+          name="email"
+          placeholder="Usuario"
+          [(ngModel)]="email"
+          required
+        />
+      </div>
+      <div class="input">
+        <input
+          type="password"
+          name="Password"
+          placeholder="password"
+          [(ngModel)]="password"
+          required
+        />
+      </div>
+      <button type="submit"  class="boton" [disabled]="!loginForm.form.valid">
+        GET IN
+      </button>
+    </form>
+  </div>
+</div>
